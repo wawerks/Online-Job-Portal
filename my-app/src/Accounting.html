@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awesome Capacitor App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/list.css" />
+    <script type="module" src="./js/system.js/logout.js"></script>
+    <script type="module" src="./js/Jobs/accounting.js"></script>
+
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body class="home">
+    
+    <nav class="navbar navbar-dark bg-dark fixed-bottom py-3">
+        <div class="alert alert-success d-none" role="alert">
+          Logout Succesfully
+         </div>
+         <div class="alert alert-danger d-none" role="alert">
+           Logout Failed!
+         </div>
+        <div class="container-fluid">
+            <a href="notif.html" style="font-size: 30px;"> <i class="fa-solid fa-bell"></i></a>
+            <!-- Apply the styling to remove border -->
+            <a href="Post.html" style="font-size: 30px; text-align: center;">
+              <i class="fa-solid fa-briefcase"></i></a>
+            <a id="hm" class="navbar-brand" href="home.html" style="font-size: 28px; text-align: center;">
+              <i class="fa-solid fa-house-chimney"></i>          </a>
+  
+            <a href="tog"  style="font-size: 30px;"
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+            <i class="fa-solid fa-user"></i> </a>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body bg-dark">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-4">
+                <li class="nav-item mb-4">
+                  <a href="profile.html"><img class="rounded-image mx-auto d-block" src="images/profile.png" alt="" width="90px"></a>
+                </li>
+                <li class="nav-item mb-4">
+                  <a href="profile.html" style="color: #5bcf21;"><i class="fa-regular fa-circle-user"></i>&nbsp;Profile</a>
+                </li>
+                <li class="nav-item mb-4">
+                  <a href="about.html" style="color: #5bcf21;"><i class="fa-regular fa-circle-question"></i>&nbsp;About Us</a>
+                </li>
+                <li class="nav-item mb-4">
+                  <a href="terms.html" style="color: #5bcf21;"><i class="fa-solid fa-newspaper"></i>&nbsp;Terms and Condition</a>
+                </li>
+              </ul>
+              
+              <div class="text-center mb-4">
+                <a id="btn_logout" style="color: #5bcf21; cursor: pointer;">
+                  <button class="btn btn-success">Log Out</button>
+                </a>
+              </div>
+  
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid d-flex justify-content-start align-items-center">
+            <div class="d-flex align-items-center">
+                <span class="category ps-4" style="margin-left:80px;">Accounting</span>
+            </div>
+           
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel" 
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li>
+                <a href="login.html"><img class="rounded-image mx-auto d-block" src="images/profile.png" alt="" width="90px"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Edit profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terms & Conditions</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <a class="text-center" href="login.html"><button  type="button" class="btn btn-outline-danger ">Logout</button></a>
+            </ul>
+           
+          </div>
+        </div>
+      </div>
+      
+    </nav>
+    
+    <div class="container">
+        <div class="container-fluid fixed-top" style="margin-top: 65px;">
+            
+            <form id="form_search" class="d-flex">
+                <input class="form-control me-2" type="text" name="keyword" placeholder="Search">
+                <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #5bcf21;"></i>  </button>
+            </form>
+
+        </div>
+        <div id="get_data">
+            <!-- Content Goes Here -->
+        </div>
+    </div>
+    
+
+<script src="./js/capacitor-welcome.js" type="module"></script>
+</body>
+</html>

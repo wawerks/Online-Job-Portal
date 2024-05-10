@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg,#307e0a, #0c1109);
+    height: 100vh;
+   
+  }
+  .container {
+    padding-top: 100px;
+    margin-top: 50px;
+    max-width: 900px;
+    margin-bottom: 50px;
+  }
+  .apply_box {
+    max-width: 650px;
+    padding: 20px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgb(98, 107, 99);
+    border-radius: 10px;
+  }
+  h1 a {
+    text-decoration: none;
+    color: black;
+  }
+  h1 a:hover {
+    color: rgb(23, 114, 11);
+  }
+  .title_small {
+    font-size: 17px;
+  }
+  .form_container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .form_control {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  input,
+  select,
+  textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  input:focus {
+    outline-color:rgb(17, 99, 20);
+  }
+  
+  input.file:focus {
+    background: rgb(17, 99, 20);
+    color: #fff;
+  }
+  #result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 5px;
+  }
+  #result:hover {
+    background: lightgray;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .thumbnail {
+    width: 100px;
+  }
+  
+  .button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  button {
+    background: orangered;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 1s ease-in;
+  }
+  button:hover {
+    background: rgb(22, 74, 22);
+  
+    color: rgb(22, 74, 22);
+    transition: 1s ease-out;
+  }
+  .textarea_control {
+    grid-column: 1 / span 2;
+  }
+  .textarea_control textarea {
+    width: 100%;
+  }
+  @media (max-width: 460px) {
+    .textarea_control {
+      grid-column: 1 / span 1;
+    }
+  }
+  .button_container button {
+    background-color: rgb(17, 99, 20); /* Change to your desired color */
+    color: white; /* Change text color if needed */
+    border-radius: 15%;
+  }
+ 
+.fa-solid.fa-bell {
+  color: #5bcf21;  
+  margin-left: 10px;
+}
+.fa-solid.fa-briefcase {
+  color: #5bcf21;  
+  margin-left: 30px;
+}
+.fa-solid.fa-house-chimney {
+  color:  #5bcf21;
+  margin-left: 30px; 
+}
+.fa-solid.fa-user {
+  color: green;
+  border: none; 
+}
+a {
+  text-decoration: none !important; /* Important to override Bootstrap styles */
+}
+
+/* Optionally, you can style the links when hovered */
+a:hover {
+  text-decoration: none !important; /* Remove underline on hover */
+}
+ul{
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}

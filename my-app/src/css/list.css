@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: linear-gradient(135deg, #0c1013, #3a701f);
+    height: 100vh; /* Fixing the height of the body to the viewport height */
+
+}
+
+.container{
+    margin-top: 130px;
+    text-align: justify;
+}
+.category {
+    color: rgb(0, 0, 0); /* Text color */
+    font-size: 30px; /* Adjust font size as needed */
+    font-family: Montserrat, sans-serif;
+    display: flex;
+}
+
+
+/* CSS to remove underlines from links within list items */
+#list ol a {
+    text-decoration: none;
+    color: black;
+}
+
+ol {
+    list-style: none;
+    counter-reset: list;
+    padding: 0 2rem;
+}
+
+#list ol li {
+    --stop: calc(100% / var(--length) * var(--i));
+    --l: 62%;
+    --l2: 88%;
+    --h: calc((var(--i) - 1) * (180 / var(--length)));
+    --c1: hsl(var(--h), 71%, var(--l));
+    --c2: hsl(var(--h), 71%, var(--l2));
+
+    position: relative;
+    max-width: 45rem; /* Adjust this value */
+    height: 15rem; /* Adjust this value for the fixed height */
+    margin: 2rem auto;
+    padding: 2rem 1rem 1rem;
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    overflow: auto; /* or overflow: hidden; */
+    background-color: rgb(255, 255, 255);
+}
+
+#list ol li h3 {
+    background-color: #ffffff; /* Adjust as needed */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+li::before {
+    content: '';
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+h3 {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1rem;
+    color: rgb(70 70 70);
+}
+
+@media (min-width: 40em) {
+    li {
+        margin: 3rem auto;
+        padding: 3rem 2rem 2rem;
+    }
+
+    h3 {
+        font-size: 2.25rem;
+        margin: 0 0 2rem;
+    }
+
+    h3::before {
+        content: ""; /* Remove content from h3 before pseudo-element */
+    }
+}
+
+/* Apply hover effect to list items */
+ol li {
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+	margin-right: 15px;
+}
+
+ol li:hover {
+    transform: scale(1.1); /* Scale up the list item on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.back-arrow {
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    left: 25px; /* Adjust as needed */
+}
+
+.modal-dialog {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the modal takes at least the full height of the viewport */
+}
+
+/* Custom styling for the modal content */
+.modal-content {
+    border-radius: 10px; /* Rounded corners for the modal */
+}
+
+/* Styling for the modal header */
+.modal-header {
+    background-color: #3a701f; /* Blue background color for the header */
+    color: #fff; /* White text color for the header */
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top of the modal */
+}
+
+/* Styling for the modal footer */
+.modal-footer {
+    background-color: #f4f4f4; /* Light gray background color for the footer */
+    border-radius: 0 0 10px 10px; /* Rounded corners for the bottom of the modal */
+}
+
+.navbar a i {
+    color: #28a745; /* Change to the desired color */
+}
+
+a {
+    text-decoration: none !important; /* Important to override Bootstrap styles */
+}
+
+/* Optionally, you can style the links when hovered */
+a:hover {
+    text-decoration: none !important; /* Remove underline on hover */
+}
+
+.fa-solid.fa-briefcase {
+    margin-left: 30px;
+}
+
+.fa-solid.fa-house-chimney {
+    margin-left: 25px;
+}
+.fas.fa-search{
+    color: #28a745; /* Change to the desired color */
+
+}
+ul {
+    font-size: 23px;
+}
+
+.container-fluid{
+    text-align: justify;
+}
+
+

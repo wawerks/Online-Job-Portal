@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Awesome Capacitor App</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <script type="module" src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
+  <script nomodule src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/auth/register.js"></script>
+
+  <meta name="theme-color" content="#31d53d" />
+</head>
+<body>
+  <div class="container">
+    <div class="title mb-3"><b>Registration</b></div>
+    <div class="content">
+      
+      <!-- notification -->
+      <div class="alert alert-success d-none" role="alert">
+       Registered Succesfully
+      </div>
+      <div class="alert alert-danger d-none" role="alert">
+        Registration Failed!
+      </div>
+      <form id="form_register">
+        <div class="user-details">
+
+            <div class="input-box">
+                <span class="details">First Name</span>
+                <input type="text" name="first_name" id="first_name" placeholder="Enter your firstname" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Last Name</span>
+                <input type="text" name="last_name" id="last_name" placeholder="Enter your lastname" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Middle Name</span>
+                <input type="text" name="middle_name" id="middle_name" placeholder="Enter Middle name" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="number" name="phone_num" id="phone_num" placeholder="Enter your number" required>
+              </div>
+              
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" required>
+              </div>
+        </div>
+
+        <div class="d-grid mb-3 mt-3">
+          <button class="btn btn-success btn-signup text-uppercase fw-bold d-flex justify-content-center align-items-center" type="submit">Sign
+              Up</button>
+      </div>
+
+        <span>Already have an account? <a href="index.html" style="color:  #5bcf21; text-decoration: none;"><u>Sign in.</u></a></span>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="./js/capacitor-welcome.js" type="module"></script>
+</html>

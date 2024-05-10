@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awesome Capacitor App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script type="module" src="./js/profile.js"></script>
+    <script type="module" src="./js/system.js/user.js"></script>
+
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+  
+    <section style="background-color: #eee;">
+        
+      <div class="container py-5">
+        <div class="apply_box">
+            <div class="alert alert-success d-none" role="alert">
+             </div>
+             <div class="alert alert-danger d-none" role="alert">
+             </div>
+        </div>
+          <div class="row">
+              <div class="col">
+                  <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                      <ol class="breadcrumb mb-0">
+                          <li class="breadcrumb-item "><a href="home.html" style="color:  #5bcf21; text-decoration: none;">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#" style="color: #5bcf21; text-decoration: none;">Edit</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                      </ol>
+                  </nav>
+              </div>
+          </div>
+          <div id="get_data">
+
+          </div>
+      </div>
+          
+  </section>
+
+  <!-- Edit Modal -->
+ <!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <form id="form_edit">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="editModalLabel">Edit Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Input fields for editing -->
+            <div class="mb-3">
+                <label for="editFullName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="editEmail" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="last_name" name="last_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="editEmail" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="middle_name" name="middle_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="editPhone" class="form-label">Mobile Phone</label>
+                <input type="tel" class="form-control" id="phone_num" name="phone_num" >
+            </div>
+            
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Upload Profile Picture</label>
+                <input class="form-control" type="file" id="image_path" name="image_path" multiple required>
+              </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" id="saveChangesBtn">Save Changes</button>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+
+<script type="module" src="./js/profile.js"></script>
+<script type="module" src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
