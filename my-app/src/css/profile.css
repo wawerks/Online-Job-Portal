@@ -14,13 +14,13 @@ body{
   background-color:  #010101    ;
 }
 .container{
-  margin-top: 100px;
+  margin-top: 190px;
+  padding-top: 30px;
   border-color: #5bcf21 ;
   border-style: solid;
   max-width: 700px;
   width: 100%;
   background-color: #0e0d0d;
-  padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   color: whitesmoke;

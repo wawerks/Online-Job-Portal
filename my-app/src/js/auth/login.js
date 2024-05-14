@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if(session != null){
             localStorage.setItem("access_token", session.access_token);
             localStorage.setItem("refresh_token", session.refresh_token);
+            localStorage.setItem("user_id", user.id);
             
         //     // for role based authentication
         // let { data: users_information, error } = await supabase
@@ -77,9 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
             // reset form
             form_login.reset();
             window.location.pathname = "/home.html";
-
-        } else {
-            errorNotification("email or password is incorrect",10);
+            
+        }
+         else {
+            errorNotification("Email or password is incorrect",10);
             console.log(error);
         }
 

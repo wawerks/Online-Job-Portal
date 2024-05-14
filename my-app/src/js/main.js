@@ -45,6 +45,4 @@ function errorNotification(message, seconds = 0) {
     }
 }
 
-
-
 export{supabase, successNotification, errorNotification };

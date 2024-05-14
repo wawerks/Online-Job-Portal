@@ -6,7 +6,7 @@
 
 body {
     font-family: Montserrat, sans-serif;
-    background: linear-gradient(135deg, #0c1013, #3a701f);
+    background: linear-gradient(135deg, #0c1013, #368211);
     height: 100vh; /* Fixing the height of the body to the viewport height */
 
 }
@@ -37,27 +37,33 @@ ol {
 
 #list ol li {
     --stop: calc(100% / var(--length) * var(--i));
-    --l: 62%;
-    --l2: 88%;
+    --k: 60%;
+    --l2: 90%;
     --h: calc((var(--i) - 1) * (180 / var(--length)));
-    --c1: hsl(var(--h), 71%, var(--l));
+    --c1: hsl(var(--h), 71%, var(--k));
     --c2: hsl(var(--h), 71%, var(--l2));
 
     position: relative;
-    max-width: 45rem; /* Adjust this value */
+    max-width: 70rem; /* Adjust this value */
     height: 15rem; /* Adjust this value for the fixed height */
     margin: 2rem auto;
     padding: 2rem 1rem 1rem;
-    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(190, 252, 5, 0.3);
     border-radius: 0.25rem;
     overflow: auto; /* or overflow: hidden; */
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(254, 254, 254);
 }
 
 #list ol li h3 {
     background-color: #ffffff; /* Adjust as needed */
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#list ol li p {
+    margin-bottom: 30px;
 }
 
 
@@ -166,6 +172,16 @@ ul {
 
 .container-fluid{
     text-align: justify;
+}
+.job-card {
+    position: relative;
+}
+
+.applyButton {
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+    
 }
 
 
